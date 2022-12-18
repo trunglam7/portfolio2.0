@@ -15,7 +15,7 @@ const Projects = () => {
 
   return (
     <div className='project-container'>
-        <button className='project-section' onClick={() => window.open('https://trunglam7.github.io/pokemon-randomizer/')}>
+        <a className='project-section' href='https://trunglam7.github.io/pokemon-randomizer/' target='_blank' rel="noreferrer">
           <div className='underline'></div>
           <h2>Pokemon Team Randomizer</h2>
           <p>Tools: HTML, CSS, Javascript, React.js</p>
@@ -25,9 +25,9 @@ const Projects = () => {
             image, type, abilities, and 4 random moveset of that Pokemon.
           </p>
           <div className='underline'></div>
-        </button>
+        </a>
 
-        <button className='project-section' onClick={() => window.open('https://github.com/trunglam7/FishCryptoTraderV2')}>
+        <a className='project-section' href='https://github.com/trunglam7/FishCryptoTraderV2' target='_blank' rel="noreferrer">
           <div className='underline'></div>
           <h2>Crypto Fish Trader</h2>
           <p>Tools: Python, PyGame</p>
@@ -36,9 +36,9 @@ const Projects = () => {
             Which ever side the fish spends the most amount of time in a given time duration, that cryptocurrency wins.
           </p>
           <div className='underline'></div>
-        </button>  
+        </a>  
 
-        <button className='project-section' onClick={() => window.open('https://trunglam7.github.io/login_sim_encryption/')}>
+        <a className='project-section' href='https://trunglam7.github.io/login_sim_encryption/' target='_blank' rel="noreferrer">
           <div className='underline'></div>
           <h2>Login Simulation with Salted MD5 Encryption</h2>
           <p>Tools: HTML, CSS, Javascript</p>
@@ -47,9 +47,9 @@ const Projects = () => {
             8 character salt.
           </p>
           <div className='underline'></div>
-        </button>
+        </a>
 
-        <button className='project-section' onClick={() => window.open('https://trunglam7.github.io/pokemon-app/')}>
+        <a className='project-section' href='https://trunglam7.github.io/pokemon-app/' target='_blank' rel="noreferrer">
           <div className='underline'></div>
           <h2>Pokemon Pagination</h2>
           <p>Tools: HTML, CSS, Javascript, React.js</p>
@@ -57,9 +57,9 @@ const Projects = () => {
             which is displayed with their names, image, and type.
           </p>
           <div className='underline'></div>
-        </button>
+        </a>
 
-        <button className='project-section' onClick={() => window.open('https://github.com/trunglam7/AdjustTheCounters')}>
+        <a className='project-section' href='https://github.com/trunglam7/AdjustTheCounters' target='_blank' rel="noreferrer">
           <div className='underline'></div>
           <h2>A-Star Search - Adjust the Counters</h2>
           <p>Tools: C++</p>
@@ -67,7 +67,7 @@ const Projects = () => {
             The puzzle description is in the Github repository.
           </p>
           <div className='underline'></div>
-        </button>
+        </a>
 
         <button className='project-section' onClick={videoHandler}>
           <div className='underline'></div>
