@@ -1,0 +1,114 @@
+@keyframes underline {
+    from{width: 0px;}
+    to{width: 100%;}
+}
+
+@keyframes slidingProject {
+    from{
+        left: -150%;
+    }
+    to{
+        left: 0;
+    }
+}
+
+.project-section:nth-child(1) {animation-delay: 0s;}
+.project-section:nth-child(2) {animation-delay: .5s;}
+.project-section:nth-child(3) {animation-delay: 1s;}
+.project-section:nth-child(4) {animation-delay: 1.5s;}
+.project-section:nth-child(5) {animation-delay: 2s;}
+.project-section:nth-child(6) {animation-delay: 2.5s;}
+
+.underline{
+    display: none;
+    animation-name: underline;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    min-height: 2px;
+    background-color: var(--main-color);
+    margin: 10px 0px;
+}
+
+.project-container{
+    display: flex;
+    margin: 40px 0px;
+    flex-wrap: wrap;
+}
+
+.project-section:hover > .underline{
+    display: block;
+}
+
+.project-section{
+    position: relative;
+    background-color: inherit;
+    max-width: calc(100% - 250px);
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 10px;
+    animation-name: slidingProject;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+.project-section h2{
+    color: var(--main-color);
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.project-section > p:first-of-type{
+    background: -webkit-linear-gradient(#eee, #333);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+}
+
+.popup-container-active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-container-hidden{
+    display: none;
+}
+
+.popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 50px;
+}
+
+.popup-exit{
+    font-size: 2rem;
+    min-width: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    background-color: black;
+    transition: box-shadow 0.5s;
+    position: relative;
+}
+
+.popup-exit:hover{
+    box-shadow: 0px 0px 10px 5px var(--main-color);
+}
+
+@media screen and (max-width: 520px) {
+    .project-container{
+        flex-direction: column;
+    }
+}
