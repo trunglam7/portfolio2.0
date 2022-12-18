@@ -19,12 +19,9 @@ function App() {
   return (
     <BrowserRouter>
        <div className="App">
+          <button className="menu-btn" onClick={menuHandler}>{toggleNav ? <IoIosClose size={50} color="black"/> : <GiHamburgerMenu size={50}/>}</button>
           <div className="content-side">
-            <div className="header-section">
-              <h1>TRUNG LAM</h1>
-              <button className="menu-btn" onClick={menuHandler}>{toggleNav ? <IoIosClose size={50} color="black"/> : <GiHamburgerMenu size={50}/>}</button>
-            </div>
-            
+            <h1>TRUNG LAM</h1>
             <nav>
               <Link to='/'>Home</Link>
               <Link to='/about'>About</Link>
