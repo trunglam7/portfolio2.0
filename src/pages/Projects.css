@@ -42,14 +42,15 @@
 .project-section{
     position: relative;
     background-color: inherit;
-    max-width: calc(100% - 250px);
+    max-width: calc(100% - 150px);
     cursor: pointer;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     animation-name: slidingProject;
     animation-timing-function: linear;
     animation-duration: 1s;
     animation-fill-mode: backwards;
+    border-style: none;
 }
 
 .project-section h2{
